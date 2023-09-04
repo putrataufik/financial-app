@@ -1,0 +1,93 @@
+/* CSS untuk Navbar */
+*{
+  padding: 0;
+  margin: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    height: 15px;
+  }
+  
+  .nav-logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  .nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links li {
+    margin: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ff6347;
+  }
+  
+  /* Hamburger Menu */
+  .nav-hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger-line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+  }
+  
+  @media (max-width: 500px) {
+    .nav-links {
+      margin-top: 5px;
+      margin-right: 5px;
+      padding-top: 20px;
+      border-radius: 15px;
+      display: none;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      background-color: #333;
+      width: 200px;
+      height: 250px ;
+      transition: all 0.3s ease;
+      z-index: 1;
+    }
+  
+    .nav-links.open {
+      display: table-column;
+    }
+    .nav-links ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+    
+    /* Tambahkan CSS ini untuk mengatur daftar navigasi menjadi vertikal */
+    .nav-links.open ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-hamburger {
+      display: flex;
+    }
+  }
+  
