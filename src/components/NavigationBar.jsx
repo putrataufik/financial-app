@@ -17,10 +17,10 @@ function NavBar() {
       <div className={`nav-links ${isNavOpen ? 'open' : ''}`}>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/Home">Home</Link>
           </li>
           <li>
-            <Link to="/profile">Profile</Link>
+            <Link to="/profile"></Link>
           </li>
           <li>
             <Link to="/documentation">Documentation</Link>
