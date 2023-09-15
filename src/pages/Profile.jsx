@@ -3,7 +3,9 @@ function Profile(){
     return(
         <div>
             <NavBar/>
-            <h1>Hell0 profile</h1>
+            <div className="profile">
+                
+            </div>
         </div>
     )
 }

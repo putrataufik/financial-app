@@ -1,0 +1,39 @@
+.Login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.FormLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    background-color: rgb(236, 236, 241);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    border-radius: 20px;
+    box-shadow: 10px black ;
+}
+input{
+    width: 235px;
+    height: 40px;
+    border-radius: 10px;
+    /* list-style: none; */
+}
+
+button{
+    width: 100px;
+    height: 35px;
+    margin-top: 3rem;
+    border-radius: 10px; 
+}
+.LoginText{
+    margin-bottom: 1rem;
+    font-size: x-large;
+}
